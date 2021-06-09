@@ -13,7 +13,9 @@ def xlsx_writer(file_name, file_data):
     :return: None
     """
 
-    dir_name = 'Resultados'  # nome do diretório onde arquivo será salvo
+    # path do diretório onde arquivo será salvo
+    dir_name = path.join(path.dirname(__file__), 'Resultados')
+    # path do arquivo
     file_name = path.join(dir_name, f'{file_name}.xlsx')
 
     if not path.exists(dir_name):  # verifica a existência do diretório

@@ -6,7 +6,9 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from time import sleep
 
-PATH = './Driver/chromedriver'
+from os import path
+
+PATH = path.join(path.dirname(__file__), 'Driver/chromedriver')
 URL = 'https://www.reclameaqui.com.br/'
 
 
