@@ -11,11 +11,19 @@ URL = 'https://www.reclameaqui.com.br/'
 
 
 def ra_scrapper(company_name):
-	driver = webdriver.Chrome(PATH)
+	"""
+	Navega até o site do 'Reclame Aqui' e extrai as informações sobre a
+	empresa desejada
+		-> UTILIZA CHROME COMO BROWSER <-
+
+	:param company_name: nome da empresa
+	:return: OrderedDict contendo as informações sobre a empresa
+	"""
+
+	driver = webdriver.Chrome(PATH)  # inicia o driver do chrome
 	driver.get(URL)
 
-	sleep(2)
-
+	# lida com o aviso de cookies
 	cookies = driver.find_element_by_id('onetrust-accept-btn-handler')
 	if cookies.is_displayed():
 		WebDriverWait(driver, 10).until(
@@ -26,6 +34,7 @@ def ra_scrapper(company_name):
 
 		cookies.click()
 
+	# executa a pesquisa pelo nome da empresa informada
 	search = driver.find_element_by_class_name('form-search')
 	search.send_keys(company_name)
 
@@ -40,8 +49,10 @@ def ra_scrapper(company_name):
 
 	sleep(.5)
 
+	# inicia a coleta de dados
 	data = OrderedDict()
 
+	# info sobre a empresa
 	company_info = driver.find_element_by_class_name('info-wrapper').text
 	company_info = company_info.split('\n')
 
@@ -65,8 +76,8 @@ def ra_scrapper(company_name):
 		'Sobre': company_info
 	})
 
+	# info sobre as avaliações da empresa
 	reputation = driver.find_element_by_id('reputation')
-
 	for i in range(1, 6):
 
 		period = reputation.find_element_by_id(f'reputation-tab-{i}')
@@ -90,7 +101,7 @@ def ra_scrapper(company_name):
 				info[i]: info[i + 1]
 			})
 
-	driver.quit()
+	driver.quit()  # finaliza o driver
 
 	return data
 
