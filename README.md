@@ -7,7 +7,7 @@
 Um Web Scraper escrito com Selenium que extrai informações sobre uma empresa do 
 site Reclame Aqui, e gera tabelas num arquivo xlsx com elas.
 </p>
-<div style="text-align: center;">
+<div align="center">
     <h4>Versão & Tech</h4>
     <hr>
         <img src="https://img.shields.io/badge/version-v%201.01-blueviolet"><br>
