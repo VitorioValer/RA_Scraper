@@ -18,12 +18,12 @@
                 <p>
                     Esse projeto tem como ferramenta principal o Framework Selenium, por isso é necessário sua instalação prévia para que o programa rode normalmente.
                     Para isso, você pode utilizar o gerenciador de pacotes para Python (pip), basta abrir o terminal de comandos e digitar:<br><br>
-                    <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/pip_selenium.png">
+                    <img src=".Screenshots/pip_selenium.png">
                 </p>
             <li>XlsxWriter Module</li>
                 <p>
                     Para a criação e manipulação de arquivos Xlsx é necessário a instalação do módulo XlsxWriter.<br><br>
-                    <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/pip_xlsxwriter.png">
+                    <img src=".Screenshots/pip_xlsxwriter.png">
                 </p>
             <li>Google Chrome Web Browser</li>
                 <p>
@@ -37,25 +37,25 @@
         <hr width="20%">
         <p>
             Para iniciar o programa, utilize o Python para executar o arquivo main.py<br>
-            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec1.png"><br>
+            <img src=".Screenshots/exec1.png"><br>
             Ao se executar o arquivo, sera requisitado que o usuário informe o nome de uma empresa na qual deseja realizar o scraping.<br>
-            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec2.png"><br>
+            <img src=".Screenshots/exec2.png"><br>
             Assim que o nome é informado, o programa inicia a pesquisa <br>
-            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec3.png"><br>
+            <img src=".Screenshots/exec3.png"><br>
             O browser é aberto e direcionado para o site "Reclame Aqui", onde é pesquisado o nome da empresa.<br>
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec4.png">
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec5.png">
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec6.png"><br>
+            <img width='33%' src=".Screenshots/exec4.png">
+            <img width='33%' src=".Screenshots/exec5.png">
+            <img width='33%' src=".Screenshots/exec6.png"><br>
             Ao finalizar a pesquisa o browser é fechado e os resultados são passado para um arquivo xlsx no diretório "Resultados" com o mesmo nome que a empresa<br>
-            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec7.png"><br>
-            <img width='50%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec8.png"><br>
+            <img src=".Screenshots/exec7.png"><br>
+            <img width='50%' src=".Screenshots/exec8.png"><br>
             As informações no arquivo são escritas em forma de tabelas, divididas em 6 planilhas. <br>
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec9.png">
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec10.png">
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec11.png">
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec12.png">
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec13.png">
-            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec14.png">
+            <img width='33%' src=".Screenshots/exec9.png">
+            <img width='33%' src=".Screenshots/exec10.png">
+            <img width='33%' src=".Screenshots/exec11.png">
+            <img width='33%' src=".Screenshots/exec12.png">
+            <img width='33%' src=".Screenshots/exec13.png">
+            <img width='33%' src=".Screenshots/exec14.png">
         </p>
     </div>
 </div>
