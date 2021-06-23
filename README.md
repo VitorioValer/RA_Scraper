@@ -4,9 +4,61 @@
     <hr>
 </div>
 <p>
-Um Web Scraper escrito com Selenium que extrai informações sobre uma empresa do 
-site Reclame Aqui, e gera tabelas num arquivo xlsx com elas.
+    Um Web Scraper escrito com Selenium que extrai informações sobre uma empresa do 
+    site Reclame Aqui, e gera tabelas num arquivo xlsx com elas.
 </p>
+<div>
+    <h3>Uso</h3>
+    <hr>
+    <div>
+        <h4>Pré-requisitos</h4>
+        <hr width="20%">
+        <lu>
+            <li>Selenium Framework</li>
+                <p>
+                    Esse projeto tem como ferramenta principal o Framework Selenium, por isso é necessário sua instalação prévia para que o programa rode normalmente.
+                    Para isso, você pode utilizar o gerenciador de pacotes para Python (pip), basta abrir o terminal de comandos e digitar:<br><br>
+                    <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/pip_selenium.png">
+                </p>
+            <li>XlsxWriter Module</li>
+                <p>
+                    Para a criação e manipulação de arquivos Xlsx é necessário a instalação do módulo XlsxWriter.<br><br>
+                    <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/pip_xlsxwriter.png">
+                </p>
+            <li>Google Chrome Web Browser</li>
+                <p>
+                    O projeto utiliza o Google Chrome (v91.0) como seu browser, por isso é necessário que ele estaja previamente instalado e na versão compatível com o WebDriver (localizado na pasta Driver). Para utilizar outras versões do Google Chrome, substitua o driver por um compatível com a versão desejada (<a href="https://chromedriver.chromium.org/downloads"> ChromeDrivers </a>).<br>
+                    <strong>ATENÇÃO: Para utilizar um browser diferente, além de ser necessário que o driver seja substituido por um compatível com o browser desejado, também é necessário que sejam feitas alterações no código do ra_scraper para que o webdriver seja instanciado com a classe compatível com o browser desejado.</strong>
+                </p>
+        </lu>
+    </div>
+    <div>    
+        <h4>Execução</h4>
+        <hr width="20%">
+        <p>
+            Para iniciar o programa, utilize o Python para executar o arquivo main.py<br>
+            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec1.png"><br>
+            Ao se executar o arquivo, sera requisitado que o usuário informe o nome de uma empresa na qual deseja realizar o scraping.<br>
+            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec2.png"><br>
+            Assim que o nome é informado, o programa inicia a pesquisa <br>
+            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec3.png"><br>
+            O browser é aberto e direcionado para o site "Reclame Aqui", onde é pesquisado o nome da empresa.<br>
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec4.png">
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec5.png">
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec6.png"><br>
+            Ao finalizar a pesquisa o browser é fechado e os resultados são passado para um arquivo xlsx no diretório "Resultados" com o mesmo nome que a empresa<br>
+            <img src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec7.png"><br>
+            <img width='50%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec8.png"><br>
+            As informações no arquivo são escritas em forma de tabelas, divididas em 6 planilhas. <br>
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec9.png">
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec10.png">
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec11.png">
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec12.png">
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec13.png">
+            <img width='33%' src="/home/valer/V/Projects/Python/RA_Scraper/.Screenshots/exec14.png">
+        </p>
+    </div>
+</div>
 <div align="center">
     <h4>Versão & Tech</h4>
     <hr>
